@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Additional Styling -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Moment.js -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.19.1/moment.js" integrity="sha256-1ni73t/Fu4WpdnQI5OzfL5KFTY8VmP6fntwKqxx9W8o=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Train Time</h1>
+      <p class="lead">Firebase train schedule with up to the minute arrival and departure times.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+   <div class="row remove-margin">
+    <p class="col-12 custom-head">Current Train Schedule</p>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trenton Express</td>
+          <td>Trenton</td>
+          <td>25</td>
+          <td>05:35 PM</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container custom-container">
+    <form>
+      <div class="form-group row">
+        <p class="col-12 custom-head">Add Train</p>
+      </div>
+      <div class="form-group row">
+        <label for="trainName" class="col-md-3 col-form-label">Train Name</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="trainName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="destination" class="col-md-3 col-form-label">Destination</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="destination">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="firstTrainTime" class="col-md-3 col-form-label">First Train Time (HH:mm - military time)</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="firstTrainTime">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="frequency" class="col-md-3 col-form-label">Frequency (min)</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" id="frequency">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Train app -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

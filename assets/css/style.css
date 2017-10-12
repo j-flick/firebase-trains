@@ -1,0 +1,35 @@
+th {
+	width: 20%;
+}
+
+.custom-head {
+	background: #0275d8;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.remove-margin {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.table, .custom-container {
+	margin-bottom: 4rem;
+}
+
+.jumbotron {
+	border-top: 30px solid #fff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.custom-container {
+	border-left: 4px solid #0275d8;
+	border-right: 4px solid #0275d8;
+	border-bottom: 4px solid #0275d8;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
