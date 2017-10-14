@@ -18,33 +18,36 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-3">Train Time</h1>
-      <p class="lead">Firebase train schedule with up to the minute arrival and departure times.</p>
+      <p class="lead">Firebase train schedule with up to the minute arrival times.</p>
     </div>
   </div>
   
   <div class="container">
+    <div class="col-12">
+      <p class="text-center">Current Time: <span id="time"></span></p>
+    </div>
    <div class="row remove-margin">
     <p class="col-12 custom-head">Current Train Schedule</p>
   </div>
   <div class="table-responsive">
-    <table class="table table-hover">
+    <table class="table table-hover" id="train-table">
       <thead>
         <tr>
-          <th>Train Name</th>
-          <th>Destination</th>
+          <th class="text-left">Train Name</th>
+          <th class="text-left">Destination</th>
           <th>Frequency (min)</th>
           <th>Next Arrival</th>
           <th>Minutes Away</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+       <!--  <tr>
           <td>Trenton Express</td>
           <td>Trenton</td>
           <td>25</td>
-          <td>05:35 PM</td>
+          <td>23:35 PM</td>
           <td>10</td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </div>
@@ -80,10 +83,29 @@
       </div>
       <div class="form-group row">
         <div class="col-sm-12">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="add-train" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </form>
+  </div>
+</div>
+
+<div class="modal fade" id="incompleteForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hey!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please fill out all fields when adding a train.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
 
